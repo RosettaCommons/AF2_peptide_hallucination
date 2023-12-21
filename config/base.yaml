@@ -1,0 +1,32 @@
+# Base configuration for peptide binder hallucination
+
+input:
+  target_sequence: null
+  binder_length: 70
+  binder_sequence: null
+
+loss:
+  plddt: 1
+  ptm: 1
+  rog: 0.1
+  contact_prob: 3
+  iPAE: 5
+
+output:
+  out_dir: models
+  cautious: True
+  out_prefix: binder
+  output_pae: False
+
+hallucination:
+  exclude_AA: C
+  mutation_rate: "3-1"
+  select_positions: plddt
+  mutation_method: frequency_adjusted
+  T_init: 0.01
+  half_life: 1000
+  steps: 5000
+
+model:
+  model: 4
+  recycles: 1

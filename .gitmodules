@@ -1,0 +1,9 @@
+[submodule "submodules/oligomer_hallucination"]
+	path = submodules/oligomer_hallucination
+	url = https://github.com/bwicky/oligomer_hallucination.git
+[submodule "alphafold"]
+	path = alphafold
+	url = https://github.com/deepmind/alphafold.git
+[submodule "submodules/alphafold"]
+	path = submodules/alphafold
+	url = https://github.com/google-deepmind/alphafold.git
